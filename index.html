@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Лаба 5</title> <!--created by vovanchuk-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="htitle">Список завдань</h1>
+<div id="content">
+<button id="openModalBtn" onclick="newTaskModal()">Додати завдання</button>
+<select id="selectTaskView" onchange="updateTaskView()">
+    <option value="all">Усі</option>
+    <option value="active">Активні</option>
+    <option value="closed">Завершені</option>
+</select>
+<div id="modalContainer"></div>
+<div id="taskView"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
